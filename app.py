@@ -8,6 +8,10 @@ def home():
         return render_template('index.html')
     return render_template('index.html')
 
+@app.route("/timetable")
+def timetable():
+    return render_template('timetable.html')
+
 if __name__ == '__main__':
     #DEBUG is SET to TRUE. CHANGE FOR PROD
     app.run(port=5000,debug=True)
